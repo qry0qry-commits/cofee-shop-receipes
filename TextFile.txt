@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+# Writes a list of English names into /home/mrqry/Projects/cofee/TextFile.txt
+
+names = [
+    "John","Mary","James","Patricia","Robert","Jennifer","Michael","Linda",
+    "William","Elizabeth","David","Barbara","Richard","Susan","Joseph","Jessica",
+    "Thomas","Sarah","Charles","Karen","Christopher","Nancy","Daniel","Lisa",
+    "Matthew","Margaret","Anthony","Betty","Mark","Sandra","Donald","Ashley",
+    "Steven","Dorothy","Paul","Kimberly","Andrew","Emily","Joshua","Donna",
+    "Kenneth","Michelle","Kevin","Carol","Brian","Amanda","George","Melissa",
+    "Edward","Deborah","Ronald","Stephanie","Timothy","Rebecca","Jason","Laura",
+    "Jeffrey","Sharon","Ryan","Cynthia","Jacob","Kathleen","Gary","Amy",
+    "Nicholas","Shirley","Eric","Angela","Jonathan","Helen","Stephen","Anna",
+    "Larry","Brenda","Justin","Pamela","Scott","Nicole","Brandon","Emma",
+    "Benjamin","Samantha","Samuel","Katherine","Gregory","Christine","Frank","Debra",
+    "Alexander","Rachel","Raymond","Carolyn","Patrick","Janet","Jack","Catherine"
+]
+
+path = "/home/mrqry/Projects/cofee/TextFile.txt"
+
+with open(path, "w", encoding="utf-8") as f:
+    for name in names:
+        f.write(name + "\n")
